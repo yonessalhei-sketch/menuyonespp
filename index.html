@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات چاپ و استیکر یونس</title>
+    <!-- استفاده از فونت وزیر برای ظاهر مدرن -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark-bg: #1a1a1a;
+            --black: #000000;
+        }
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: var(--black);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--dark-bg);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .logo-placeholder {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            border: 2px dashed var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 { color: var(--gold); margin: 0; }
+        p { color: #ccc; margin-top: 10px; }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+        }
+
+        .nav-btn {
+            background: none;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        .nav-btn:hover, .nav-btn.active {
+            background: var(--gold);
+            color: black;
+        }
+
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; }
+        .section-content { display: none; animation: fadeIn 0.5s ease; }
+        .section-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            border: 1px solid var(--gold);
+        }
+
+        footer {
+            background: var(--dark-bg);
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+            border-top: 1px solid var(--gold);
+        }
+
+        .contact-info { color: var(--gold); font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class=""></div>
+    <h1>خدمات تخصصی چاپ و استیکر یونس</h1>
+</header>
+
+<nav>
+    <button class="nav-btn active" onclick="showSection('home', this)">صفحه اصلی</button>
+    <button class="nav-btn" onclick="showSection('shisheh', this)">شیشه مات‌کن</button>
+    <button class="nav-btn" onclick="showSection('mesh', this)">مش</button>
+    <button class="nav-btn" onclick="showSection('sticker', this)">استیکر/وینیل</button>
+    <button class="nav-btn" onclick="showSection('roozrang', this)"></button>
+    <button class="nav-btn" onclick="showSection('shabrang', this)">روز رنگ</button>
+</nav>
+
+<div class="container">
+    <div id="home" class="section-content active">
+        <h2>خوش آمدید</h2>
+        <p>بهترین خدمات چاپ و نصب استیکر. از منوی بالا انتخاب کنید.</p>
+    </div>
+
+    <!-- شیشه مات‌کن (10 عکس + 3 ویدیو) -->
+    <div id="shisheh" class="section-content">
+        <h2>شیشه مات‌کن</h2>
+        <div class="gallery-grid">
+            <img src="https://i.imgur.com/NsYYiyD.jpeg" alt="1"><img src="https://i.imgur.com/FsowTui.jpeg" alt="2"><img src="https://i.imgur.com/08AaIu3.jpeg" alt="3"><img src="https://i.imgur.com/9TRqm3c.jpeg" alt="4"><img src="https://i.imgur.com/lYBdoB6.jpeg" alt="5">
+            <img src="https://i.imgur.com/F3cw5ou.jpeg" alt="6"><img src="https://i.imgur.com/bOVjTLA.jpeg
+              " alt="7"><img src="https://i.imgur.com/EoWXvvY.jpeg" alt="8"><img src="https://i.imgur.com/Dz3FK4w.jpeg" alt="9"><img src="https://i.imgur.com/cgsWU7M.jpeg" alt="10">
+        </div>
+       <!-- ویدیوی اول -->
+<video width="100%" height="250" controls>
+  <source src="https://i.imgur.com/ul6y6Y6.mp4" type="video/mp4">
+  
+</video>
+
+<!-- ویدیوی دوم -->
+<video width="100%" height="250" controls>
+  <source src="https://i.imgur.com/yLUluUm.mp4" type="video/mp4">
+</video>
+
+<!-- ویدیوی سوم -->
+<video width="100%" height="250" controls>
+  <source src="https://i.imgur.com/c2UgmO4.mp4" type="video/mp4">
+</video>
+
+        </div>
+    </div>
+
+    <!-- مش (5 عکس + 3 ویدیو) -->
+    <div id="mesh" class="section-content">
+        <h2>چاپ مش</h2>
+        <div class="gallery-grid">
+            <img src="https://i.imgur.com/X1ri9t1.jpeg" alt="1"><img src="https://i.imgur.com/1g0Uljr.jpeg" alt="2"><img src="https://i.imgur.com/WQWfA8c.jpeg" alt="3"><img src="https://i.imgur.com/0bk4W3l.jpeg" alt="4"><img src="https://i.imgur.com/ZP5NwNr.jpeg" alt="5">
+        </div>
+        <!-- ویدیوی اول -->
+<video width="100%" height="250" controls>
+  <source src="https://i.imgur.com/ul6y6Y6.mp4" type="video/mp4">
+  .
+</video>
+
+<!-- ویدیوی دوم -->
+<video width="100%" height="250" controls>
+  <source src="https://i.imgur.com/BVJAP1g.mp4" type="video/mp4">
+</video>
+
+<!-- ویدیوی سوم -->
+<video width="100%" height="250" controls>
+  <source src="https://i.imgur.com/VqETvdq.mp4" type="video/mp4">
+</video>
+
+    </div>
+
+    <!-- استیکر (5 عکس + 1 ویدیو) -->
+    <div id="sticker" class="section-content">
+        <h2>استیکر و وینیل</h2>
+        <div class="gallery-grid">
+            <img src="https://i.imgur.com/qtlgjPL.jpeg" alt="1"><img src="https://i.imgur.com/SxYRnEk.jpeg" alt="2"><img src="https://i.imgur.com/ousTZLm.jpeg" alt="3"><img src="https://i.imgur.com/P8MoxSB.jpeg" alt="4"><img src="https://i.imgur.com/nXCh6Zb.jpeg" alt="5">
+ <!-- ویدیوی اول -->
+<video width="100%" height="250" controls>
+  <source src="https://i.imgur.com/fsTMZVo.mp4" type="video/mp4">
+  .
+</video>
+
+<!-- ویدیوی دوم -->
+<video width="100%" height="250" controls>
+  <source src="https://i.imgur.com/kmKyQOk.mp4" type="video/mp4">
+</video>
+
+<!-- ویدیوی سوم -->
+<video width="100%" height="250" controls>
+  <source src="https://i.imgur.com/bZzwIAo.mp4" type="video/mp4">
+</video>
+ </div>
+     
+
+    <!-- روزرنگ (5 عکس) -->
+    <div id="roozrang" class="section-content">
+        <h2>روزرنگ</h2>
+        <div class="gallery-grid">
+            <img src="https://i.imgur.com/qtlgjPL.jpeg" alt="1"><img src="https://i.imgur.com/SxYRnEk.jpeg" alt="2"><img src="https://i.imgur.com/ousTZLm.jpeg" alt="3"><img src="https://i.imgur.com/P8MoxSB.jpeg" alt="4"><img src="https://i.imgur.com/nXCh6Zb.jpeg" alt="5">
+        </div>
+    </div>
+
+    <!-- شبرنگ (5 عکس) -->
+    <div id="shabrang" class="section-content">
+        <h2>شبرنگ</h2>
+        <div class="gallery-grid">
+            <img src="لینک_عکس" alt="1"><img src="لینک_عکس" alt="2"><img src="لینک_عکس" alt="3"><img src="لینک_عکس" alt="4"><img src="لینک_عکس" alt="5">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="contact-info">
+        <p>تلفن تماس: 09120000000</p>
+    </div>
+</footer>
+
+<script>
+    function showSection(id, btn) {
+        document.querySelectorAll('.section-content').forEach(s => s.classList.remove('active'));
+        document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        btn.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
